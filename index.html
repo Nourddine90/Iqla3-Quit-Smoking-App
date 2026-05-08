@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إقلاع - Iqla3 | Nourddine Abatal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sci-fi-container">
+        <!-- العلامة المائية الذهبية المتطورة -->
+        <div class="watermark-gold">
+            <span class="watermark-text">Nourddine Abatal</span>
+            <div class="watermark-glow"></div>
+            <div class="watermark-orbit">
+                <div class="orbit-particle"></div>
+                <div class="orbit-particle"></div>
+                <div class="orbit-particle"></div>
+            </div>
+        </div>
+
+        <!-- الساعة الثنائية -->
+        <div class="binary-clock">
+            <div class="clock-panel">
+                <h3 class="clock-title">⏃ الوقت الثنائي</h3>
+                <div class="binary-display" id="binaryTime">0000:0000:0000</div>
+                <div class="decimal-time" id="decimalTime">00:00:00</div>
+            </div>
+            
+            <div class="clock-divider"></div>
+            
+            <div class="clock-panel">
+                <h3 class="clock-title">⧫ مدة الإقلاع</h3>
+                <div class="quit-duration" id="quitDuration">0000يوم 00س 00د 00ث</div>
+                <div class="progress-ring">
+                    <svg viewBox="0 0 120 120">
+                        <circle cx="60" cy="60" r="52" class="ring-bg"/>
+                        <circle cx="60" cy="60" r="52" class="ring-progress" id="progressCircle"/>
+                    </svg>
+                    <div class="progress-text" id="progressPercent">0%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- لوحة التحفيز -->
+        <div class="motivation-panel">
+            <div class="lung-status">
+                <div class="lung-icon">🫁</div>
+                <div class="healing-bar">
+                    <div class="healing-fill" id="healingFill"></div>
+                </div>
+                <p class="healing-text" id="healingText">رئتاك تتجددان...</p>
+            </div>
+            
+            <button class="sci-fi-button" id="resetButton">
+                <span class="button-text">⟳ إعادة ضبط المؤقت</span>
+                <span class="button-glow"></span>
+            </button>
+        </div>
+
+        <!-- المستشعرات الحيوية -->
+        <div class="bio-stats">
+            <div class="stat">
+                <span class="stat-icon">⚛️</span>
+                <span class="stat-label">نبض التحفيز</span>
+                <span class="stat-value" id="motivationPulse">94%</span>
+            </div>
+            <div class="stat">
+                <span class="stat-icon">🧬</span>
+                <span class="stat-label">درجة النقاء</span>
+                <span class="stat-value" id="purityLevel">72%</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
